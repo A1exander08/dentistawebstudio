@@ -21,7 +21,7 @@ html {
     --primaryLight: #7AAACE;
     --secondary: #9CD5FF;
     --secondaryLight: #ddf1ff;
-    --third: #fca3ce;
+    --third: #43b0ef;
     --thirdLight: #fca3ce;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
@@ -54,7 +54,7 @@ p {
     line-height: 1.2em;
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-weight: 700;
+    font-weight: 900;
     color: var(--third);
     margin-bottom: 0.25rem;
     display: block;
@@ -77,8 +77,13 @@ p {
     color: var(--bodyTextColor);
 }
 
-.primary {
+.primarylight {
     color: var(--primaryLight) !important;
+    font-weight: bold;
+}
+
+.primary {
+    color: var(--primary) !important;
     font-weight: bold;
 }
 
