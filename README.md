@@ -16,4 +16,27 @@ prezzi: l'abbonamento e servizi inclusi + iva inclusa. <----- OFFERTA SPECIALE! 
 
 cta: chiama subito -> numero
 
+chi sono: conosci il tuo sviluppatore + foto di me.
+
 footer: con piva ect.
+
+
+DA FARE --> GRAFICA:
+
+- logo
+
+- img hero
+
+- imgs icone da inserire nell'intro
+
+- imgs rappresentative da inserire nell'intro
+
+- in REPORT inserire un report più convincente.
+
+- img CTA di persona soddisfatta o qualcosa di simile
+
+- la mia img con pc in mano -> aggiungendo con una freccia "il tuo professionista"
+
+- in CHI SONO inserire 3 icone
+
+- bg in FOOTER

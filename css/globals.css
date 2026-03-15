@@ -12,11 +12,15 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary: #355872;
     --primaryLight: #7AAACE;
     --secondary: #9CD5FF;
-    --secondaryLight: #9CD5FF;
+    --secondaryLight: #ddf1ff;
     --third: #fca3ce;
     --thirdLight: #fca3ce;
     --headerColor: #1a1a1a;
@@ -33,6 +37,11 @@ body {
     padding: 0;
 }
 
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
 *,
 *:before,
 *:after {
@@ -41,6 +50,7 @@ body {
 
 .cs-topper {
     font-size: var(--topperFontSize);
+    font-family: sans-serif;
     line-height: 1.2em;
     text-transform: uppercase;
     letter-spacing: .1em;
@@ -65,4 +75,44 @@ body {
     line-height: 1.5em;
     max-width: 40.625rem;
     color: var(--bodyTextColor);
+}
+
+.primary {
+    color: var(--primaryLight) !important;
+    font-weight: bold;
+}
+
+/* BUTTON ********************************/
+.btn-main {
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    border: none;
+    min-width: 20.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    border-radius: .4rem;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    transition-duration: 0.6s;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-main.variante {
+    background-color: var(--primaryLight) !important;
+}
+
+.btn-main:hover {
+    letter-spacing: 11px;
 }
