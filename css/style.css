@@ -876,11 +876,10 @@
   }
 
   #hero-1951 .cs-picture {
-    width: 19.0625em;
-    height: 37.5em;
+    width: 100%;
+    height: auto;
     margin: 0;
     overflow: hidden;
-    border-radius: 37.5em;
     display: block;
     position: absolute;
     top: 0.75em;
@@ -895,21 +894,6 @@
     position: absolute;
     top: 0;
     left: 0;
-  }
-
-  #hero-1951 .cs-icon {
-    width: 12.6875em;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 13.125em;
-  }
-
-  #hero-1951 .cs-right {
-    bottom: 0;
-    top: auto;
-    left: auto;
-    right: 0;
   }
 }
 
@@ -951,11 +935,6 @@
     bottom: 4.875em;
   }
 
-  #hero-1951 .cs-right {
-    height: auto;
-    top: 5.625em;
-    bottom: 0em;
-  }
 }
 
 
