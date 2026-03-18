@@ -804,6 +804,44 @@
     margin-bottom: 1.25rem;
   }
 
+  #hero-1951 .cs-ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    width: fit-content;
+    margin: 2rem 0 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  #hero-1951 .cs-li {
+    font-size: 1.2rem;
+    line-height: 1.2em;
+    text-align: left;
+    text-transform: uppercase;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColor);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-weight: 800;
+  }
+
+  #hero-1951 .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    flex: none;
+    padding: 0.25rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: block;
+  }
+
   #hero-1951 .cs-reviews {
     text-align: center;
     margin-top: clamp(2.5rem, 5vw, 5rem);
@@ -868,32 +906,16 @@
   }
 
   #hero-1951 .cs-image-group {
-    font-size: min(2.3vw, 1rem);
-    width: 39.375em;
-    height: 43.125em;
-    position: relative;
-    z-index: 1;
-  }
-
-  #hero-1951 .cs-picture {
     width: 100%;
     height: auto;
-    margin: 0;
-    overflow: hidden;
-    display: block;
-    position: absolute;
-    top: 0.75em;
-    left: 0;
+    position: relative;
+    display: flex;
     z-index: 1;
   }
 
-  #hero-1951 .cs-picture img {
+  #hero-1951 .hero-img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: auto;
   }
 }
 
@@ -922,17 +944,8 @@
   }
 
   #hero-1951 .cs-image-group {
-    font-size: min(1.12vw, 1rem);
-    height: auto;
-    min-height: 43.125em;
-    flex: none;
+    align-items: center;
     order: 2;
-  }
-
-  #hero-1951 .cs-left {
-    height: auto;
-    top: 0.75em;
-    bottom: 4.875em;
   }
 
 }
@@ -1137,6 +1150,41 @@
     margin-bottom: 2rem;
   }
 
+  #sbsr-1279 .cs-ul {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    width: fit-content;
+    margin: 2rem 0 2rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  #sbsr-1279 .cs-li {
+    line-height: 1.2em;
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColor);
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  #sbsr-1279 .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    flex: none;
+    padding: 0.25rem;
+    background-color: var(--primary);
+    border-radius: 50%;
+    display: block;
+  }
+
   #sbsr-1279 .cs-picture {
     width: 100%;
     height: clamp(28.5rem, 46vw, 37.375rem);
@@ -1172,7 +1220,7 @@
 
   #sbsr-1279 .cs-background {
     width: 100%;
-    height: 50%;
+    height: 44%;
     background-color: var(--primary);
     display: block;
     position: absolute;
@@ -1488,10 +1536,14 @@
     gap: 1.2rem;
   }
 
+  #pricing-2421 .disclaimer p {
+    text-align: start;
+  }
+
   #pricing-2421 .cs-plan {
     font-size: clamp(1rem, 3.3vw, 1.5625rem);
     line-height: 1.5em;
-    text-align: left;
+    text-align: center;
     font-weight: 700;
     color: var(--headerColor);
   }
@@ -1503,7 +1555,8 @@
     color: var(--primary);
     display: inline-flex;
     align-items: baseline;
-    transition: color 0.3s;
+    justify-content: center;
+    width: 100%;
   }
 
   .cs-price-removed {
@@ -1531,6 +1584,7 @@
     z-index: 1;
     transition: transform 0.6s;
     transform-origin: top left;
+    text-align: center;
   }
 
   #pricing-2421 .cs-card:before {
@@ -1547,7 +1601,7 @@
   }
 
   #pricing-2421 .cs-package {
-    font-size: 1.5625rem;
+    font-size: 2rem;
     font-family: 'Vaulto-ExtraBold';
     line-height: 1.5em;
     font-weight: 700;
