@@ -4,31 +4,13 @@ GRAFICA:
 
 -> deve avere una grafica di tipo PREMIUM.
 
-SEZIONI:
-
-hero: cosa facciamo e quali vantaggi ottieni.
-
-intro: come ci riusciamo -> steps.
-
-report: otterrai un report completo sull'andamento della tua visibilità ogni mese. 
-
-prezzi: l'abbonamento e servizi inclusi + iva inclusa. <----- OFFERTA SPECIALE! A SOLI €70/MESE fino al 15/Maggio
-
-cta: chiama subito -> numero
-
-chi sono: conosci il tuo sviluppatore + foto di me.
-
-footer: con piva ect.
 
 
-DA FARE --> GRAFICA:
+DA FARE:
 
-- in REPORT inserire un report più convincente.
+- in REPORT inserire un img di un dentista che guarda delle statistiche al pc.
 
 - img CTA di persona soddisfatta o qualcosa di simile
 
-- la mia img con pc in mano -> aggiungendo con una freccia "il tuo professionista" + la homepage nel pc
+- la mia img con pc in mano -> aggiungendo con una freccia "il tuo professionista" + la homepage nel pc + un cerchio azzurro da dove sbuco fuori che arriva fino a sotto le spalle o gomiti.
 
-- bg in FOOTER
-
-- favicon

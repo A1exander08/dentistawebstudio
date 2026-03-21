@@ -1581,11 +1581,9 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
     z-index: 1;
-    transition: transform 0.6s;
-    transform-origin: top left;
     text-align: center;
   }
 
@@ -1613,7 +1611,8 @@
   #pricing-2421 .cs-ul {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
-    width: 100%;
+    width: fit-content;
+    max-width: 700px;
     margin: 0 0 2rem;
     padding: 0;
     display: flex;
@@ -1634,6 +1633,8 @@
     display: flex;
     align-items: flex-start;
     gap: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
   }
 
   #pricing-2421 .cs-icon {
@@ -1652,7 +1653,7 @@
 
   #pricing-2421 .cs-card,
   #pricing-2421 .cs-button-group {
-    grid-column: span 6;
+    grid-column: span 12;
   }
 
   #pricing-2421 .cs-card {
@@ -1910,6 +1911,7 @@
 
   #sbsr-1432 .cs-text {
     margin-bottom: 1rem;
+    font-family: monospace;
   }
 
   #sbsr-1432 .cs-text:last-of-type {
@@ -1971,9 +1973,10 @@
   }
 
   #sbsr-1432 .cs-h3 {
-    font-size: 1.25rem;
+    font-family: monospace;
+    font-size: 1.07rem;
     line-height: 1.2em;
-    font-weight: 700;
+    font-weight: 400;
     text-align: left;
     margin: 0 0 0.75rem 0;
     color: var(--headerColor);
@@ -2106,17 +2109,7 @@
   }
 
   #footer-1147 .cs-link {
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    text-align: center;
-    margin: 0;
     color: white;
-    display: block;
-    transition: color 0.3s;
-  }
-
-  #footer-1147 .cs-link:hover {
-    color: var(--secondary);
   }
 
   #footer-1147 .cs-logo {
