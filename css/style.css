@@ -2026,13 +2026,13 @@
 <---        Pagespeed           -->
 <--- -------------------------- -*/
 @media only screen and (min-width: 0rem) {
-  #pagespeed{
+  #pagespeed {
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
   }
 
-  #pagespeed .cs-container{
+  #pagespeed .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -2052,7 +2052,6 @@
 
   #pagespeed .cs-title {
     max-width: 28ch;
-    font-size: clamp(1.5375rem, 7.9vw, 3.0625rem);
     ;
   }
 
