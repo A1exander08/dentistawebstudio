@@ -181,41 +181,75 @@ to{transform:scale(1);opacity:1}
 }
 
 /* CTA02 *****************************/
-#cta02{padding:var(--sectionPadding);overflow:hidden;position:relative}
-#cta02::before{content: '';width: 100%;height: 100%;background-image: url(https://csimages.lon1.digitaloceanspaces.com/pics/dentista/bg/bg01.jpg);opacity: 0.07;
-   display: block;position: absolute;top: 0;right: 0;z-index: -1;}
-#cta02 .cs-container{width:100%;max-width:74rem;margin:auto;display:flex;flex-direction:column;align-items:center;gap:clamp(3rem,6vw,4rem)}
-#cta02 .cs-content{text-align:center;width:100%;display:flex;flex-direction:column;align-items:center}
+#cta02{padding:var(--sectionPadding);overflow:hidden;position:relative;padding:clamp(4rem,8vw,7.5rem) 1rem;
+   background:linear-gradient(135deg,#102232 0%,#233f55 48%,#355872 100%);color:#fff}
+#cta02::before{content: '';width: 100%;height: 100%;background-image: url(https://csimages.lon1.digitaloceanspaces.com/pics/dentista/bg/bg01.jpg);opacity:.12;
+   display: block;position: absolute;top: 0;right: 0;z-index: 0;background-size:cover;background-position:center}
+#cta02::after{content:"";width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.42),transparent);
+   position:absolute;left:0;bottom:clamp(1rem,3vw,2.5rem)}
+#cta02 .cs-container{width:100%;max-width:78rem;margin:auto;display:flex;flex-direction:column;align-items:center;gap:clamp(1.75rem,4vw,3.5rem)}
+#cta02 .cs-content{text-align:center;width:100%;display:flex;flex-direction:column;align-items:center;padding:clamp(1.2rem,3vw,2rem);
+   border:1px solid rgba(255,255,255,.16);border-radius:1.25rem;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035));
+   box-shadow:0 28px 80px rgba(3,14,23,.24);backdrop-filter:blur(8px)}
+#cta02 .cs-topper{background:rgba(255,255,255,.08);color:#bde9ff;border-color:rgba(255,255,255,.18)}
 #cta02 .cs-title{max-width:73.75rem!important;font-size: clamp(1.3375rem, 6.9vw, 2.0625rem);color: #fff;line-height: 1.4em;}
-#cta02 .cs-text{max-width:66.25rem;background-color: white;border-radius: 20px;padding: 50px;border: 5px solid #4b82a6;padding-inline: 25px;text-align: center;}
-#cta02 .cs-arrow {width: 9.625rem;height: auto;margin-bottom: 1.25rem;display: block;filter: invert(5%) sepia(20%) saturate(1138%) hue-rotate(134deg) brightness(80%) contrast(109%)}
+#cta02 .cs-title u{text-decoration-thickness:.12em;text-underline-offset:.12em;text-decoration-color:rgba(156,213,255,.55)}
+#cta02 .cs-text{max-width:66.25rem;background-color: white;border-radius: 20px;padding: 50px;border: 5px solid #4b82a6;padding-inline: 25px;text-align: center;
+   max-width:54rem;margin:0;background:rgba(255,255,255,.96);border:1px solid rgba(255,255,255,.7);border-radius:1rem;
+   padding:clamp(1.3rem,4vw,3rem);box-shadow:0 20px 60px rgba(3,14,23,.24);color:#30495b}
+#cta02 .cs-arrow {height: auto;display: block;width:clamp(5rem,12vw,8rem);margin:-.25rem 0 1rem;filter:brightness(0) invert(1);opacity:.92}
+#cta02 .cs-img{width:100%;height:auto;padding:20px;}
 @media only screen and (min-width: 48rem) {
    #cta02 .cs-title{max-width:21ch!important;margin-bottom:clamp(1.25rem,3vw,2rem);font-size:var(--headerFontSize);color:#fff}
    #cta02 .cs-text{text-align: start;}
+   #cta02 .cs-content{padding:clamp(2rem,4vw,4rem)}
 }
+
 
 /* SERVIZI ***************************/
 #servizi01{padding:var(--sectionPadding);overflow:hidden;position:relative}
-#servizi01::before{content:"";width:100%;height:100%;background-color:var(--primary);opacity:.03;position:absolute;top:0;left:0;z-index:-1}
+#servizi01::before{content:"";width:100%;height:100%;background-color:#fff;opacity:.5;position:absolute;top:0;left:0;z-index:-1;
+   background-image: url(../images/sfondo-cemento.webp);background-color: var(--white);background-size: contain;
+   background-repeat: repeat;background-position: center center;}
 #servizi01 .cs-container{width:100%;max-width:44rem;margin:auto;display:flex;flex-direction:column;align-items:center;gap:clamp(3rem,6vw,4rem)}
-#servizi01 .cs-content{text-align:center;width:100%;display:flex;flex-direction:column;align-items:center}
+#servizi01 .cs-content{max-width:58rem;margin:auto;text-align:center;width:100%;display:flex;flex-direction:column;align-items:center}
+#servizi01 .cs-title{max-width:20ch}
 #servizi01 .cs-text{max-width:56.25rem}
-#servizi01 .cs-card-group{width:100%;margin:0;padding:0;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(1rem,2vw,1.25rem);position:relative}
-#servizi01 .cs-item{text-align:center;list-style:none;width:100%;padding:clamp(1.5rem,3.1vw,2rem) clamp(1rem,2.3vw,2rem);background-color:#fff;border-radius:.5rem;border:1px solid transparent;
-   display:flex;flex-direction:column;align-items:center;grid-column:span 12;position:relative;box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);transition: transform 0.3s ease, box-shadow 0.3s ease;}
-#servizi01 .cs-item:hover{transform: translateY(-5px);box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);}
+#servizi01 .cs-card-group{width:100%;margin:0;padding:0;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(1rem,2.2vw,1.6rem);position:relative}
+#servizi01 .cs-item{text-align:center;list-style:none;width:100%;padding:clamp(1.25rem,2.5vw,1.75rem);background-color:#fff;
+   border-radius:1rem;border:1px solid rgba(53,88,114,.12);background:linear-gradient(180deg,#fff,#f8fbfd);
+   display:flex;flex-direction:column;align-items:center;grid-column:span 12;position:relative;box-shadow:0 20px 55px rgba(16,34,50,.08);
+   transition: transform 0.3s ease, box-shadow 0.3s ease;overflow:hidden}
+#servizi01 .cs-item:before{content:"";width:100%;height:.3rem;background:linear-gradient(90deg,#6eb7cb,#355872);position:absolute;top:0;left:0;opacity:.78}
+#servizi01 .cs-item:hover{transform: translateY(-7px);border-color:rgba(67,176,239,.28);box-shadow:0 28px 70px rgba(16,34,50,.14)}
 #servizi01 .cs-item:hover .cs-h3{color:var(--primary)}
-#servizi01 .cs-icon{width:3rem;height:auto;margin-bottom:1rem;display:block}
-#servizi01 .cs-h3{font-size:1.25rem;line-height:1.2em;text-align:inherit;margin:0 0 1rem;color:var(--headerColor);transition:color .3s;font-family:sans-serif}
-#servizi01 .cs-item-text{font-size:1rem;line-height:1.5em;text-align:inherit;margin:0 0 1.5rem;color:var(--bodyTextColor)}
-#servizi01 .cs-number-wrapper{width:fit-content;height:3rem;margin-top:auto;margin-bottom:-1.5rem;padding:.625rem;background-color:var(--primary);border-radius:.5rem;display:flex;justify-content:center;align-items:center;z-index:1}
-#servizi01 .cs-number{font-size:1.25rem;font-weight:700;color:#fff;font-family:sans-serif}
-#servizi01 .cs-picture{width:100%;height:clamp(8.75rem,18vw,11.25rem);display:block;flex:none}
-#servizi01 .cs-picture img{width:100%;height:100%;object-fit:cover;border-radius:.5rem}
+#servizi01 .cs-icon{width:3.35rem;height:auto;margin-bottom:1rem;display:block;padding:.62rem;border-radius:1rem;background:#eef7fc;
+   box-shadow:inset 0 0 0 1px rgba(67,176,239,.14)}
+#servizi01 .cs-h3{font-size:1.35rem;line-height:1.16;text-align:inherit;margin:0 0 1rem;color:#15283a;transition:color .3s;font-family:sans-serif}
+#servizi01 .cs-item-text{font-size:1rem;line-height:1.5em;text-align:inherit;margin:0 0 1.5rem;color:#556977}
+#servizi01 .cs-number-wrapper{width:fit-content;height:auto;margin-top:auto;margin-bottom:1rem;padding:.45rem .75rem;background-color:var(--premiumInk);
+   border-radius:999px;display:flex;justify-content:center;align-items:center;z-index:1;box-shadow:0 12px 26px rgba(16,34,50,.18)}
+#servizi01 .cs-number{font-size:.82rem;font-weight:700;color:#fff;font-family:sans-serif;letter-spacing:.08em}
+#servizi01 .cs-picture{width:100%;height:clamp(9.5rem,17vw,12rem);display:block;flex:none;border-radius:.85rem;overflow:hidden}
+#servizi01 .cs-picture img{width:100%;height:100%;object-fit:cover;border-radius:0;transition:transform .45s ease}
+#servizi01 .cs-item:hover .cs-picture img{transform:scale(1.05)}
 @media only screen and (min-width: 48rem) {
-#servizi01 .cs-container{max-width:80rem}
+#servizi01 .cs-container{max-width:82rem}
 #servizi01 .cs-item{grid-column:span 4}
 }
+@media only screen and (min-width:48rem){
+#servizi01 .cs-item{grid-column:span 6}
+}
+@media only screen and (min-width:64rem){
+#servizi01 .cs-item{grid-column:span 4}
+}
+@media only screen and (max-width:47.9375rem){
+#servizi01 .cs-h3{font-size:1.35rem}
+#servizi01 .cs-item{text-align:left;align-items:flex-start}
+#servizi01 .cs-icon{margin-bottom:.85rem}
+#servizi01 .cs-number-wrapper{margin-left:0}
+}
+
 
 /* REPORT ******************************/
 #report{padding:var(--sectionPadding);overflow:hidden;position:relative;z-index:1;background-image: url(../images/sfondo-cemento.webp);
@@ -436,41 +470,10 @@ to{transform:scale(1);opacity:1}
 }
 
 /* PREMIUM REFRESH ********************/
-#cta02 .cs-topper,#servizi01 .cs-topper,#report .cs-topper,#prezzo01 .cs-topper{padding:.45rem .85rem;border:1px solid rgba(67,176,239,.18);
-   border-radius:999px;background:rgba(255,255,255,.72);box-shadow:0 10px 30px rgba(53,88,114,.08);width:fit-content}
-
-#cta02{padding:clamp(4rem,8vw,7.5rem) 1rem;background:linear-gradient(135deg,#102232 0%,#233f55 48%,#355872 100%);color:#fff}
-#cta02::before{background-image:url(https://csimages.lon1.digitaloceanspaces.com/pics/dentista/bg/bg01.jpg);background-size:cover;background-position:center;opacity:.12;mix-blend-mode:screen}
-#cta02::after{content:"";width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.42),transparent);position:absolute;left:0;bottom:clamp(1rem,3vw,2.5rem)}
-#cta02 .cs-container{max-width:78rem;gap:clamp(1.75rem,4vw,3.5rem)}
-#cta02 .cs-content{padding:clamp(1.2rem,3vw,2rem);border:1px solid rgba(255,255,255,.16);border-radius:1.25rem;background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035));box-shadow:0 28px 80px rgba(3,14,23,.24);backdrop-filter:blur(8px)}
-#cta02 .cs-topper{background:rgba(255,255,255,.08);color:#bde9ff;border-color:rgba(255,255,255,.18)}
-#cta02 .cs-title u{text-decoration-thickness:.12em;text-underline-offset:.12em;text-decoration-color:rgba(156,213,255,.55)}
-#cta02 .cs-text{max-width:54rem;margin:0;background:rgba(255,255,255,.96);border:1px solid rgba(255,255,255,.7);border-radius:1rem;
-   padding:clamp(1.3rem,4vw,3rem);box-shadow:0 20px 60px rgba(3,14,23,.24);color:#30495b}
-#cta02 .cs-arrow{width:clamp(5rem,12vw,8rem);margin:-.25rem 0 1rem;filter:brightness(0) invert(1);opacity:.82}
-#cta02 .cs-img{width:100%;height:auto;padding:20px;}
-
-#servizi01{padding:clamp(4rem,8vw,7.25rem) 1rem;background-image: url(../images/sfondo-cemento.webp);background-color: var(--white);background-size: contain;background-repeat: repeat;background-position: center center;}
-#servizi01::before{content: "";width: 100%;height: 100%;background-color: white;opacity: .5;position: absolute;top: 0;left: 0;z-index: -1;}
-#servizi01 .cs-container{max-width:82rem}
-#servizi01 .cs-content{max-width:58rem;margin:auto}
-#servizi01 .cs-title{max-width:20ch}
-#servizi01 .cs-card-group{gap:clamp(1rem,2.2vw,1.6rem)}
-#servizi01 .cs-item{padding:clamp(1.25rem,2.5vw,1.75rem);border:1px solid rgba(53,88,114,.12);border-radius:1rem;background:linear-gradient(180deg,#fff,#f8fbfd);box-shadow:0 20px 55px rgba(16,34,50,.08);overflow:hidden}
-#servizi01 .cs-item:before{content:"";width:100%;height:.3rem;background:linear-gradient(90deg,#6eb7cb,#355872);position:absolute;top:0;left:0;opacity:.78}
-#servizi01 .cs-item:hover{transform:translateY(-7px);border-color:rgba(67,176,239,.28);box-shadow:0 28px 70px rgba(16,34,50,.14)}
-#servizi01 .cs-icon{width:3.35rem;padding:.62rem;border-radius:1rem;background:#eef7fc;box-shadow:inset 0 0 0 1px rgba(67,176,239,.14)}
-#servizi01 .cs-h3{font-size:1.35rem;line-height:1.16;color:#15283a}
-#servizi01 .cs-item-text{color:#556977}
-#servizi01 .cs-number-wrapper{height:auto;margin-bottom:1rem;padding:.45rem .75rem;border-radius:999px;background:var(--premiumInk);box-shadow:0 12px 26px rgba(16,34,50,.18)}
-#servizi01 .cs-number{font-size:.82rem;letter-spacing:.08em}
-#servizi01 .cs-picture{height:clamp(9.5rem,17vw,12rem);border-radius:.85rem;overflow:hidden}
-#servizi01 .cs-picture img{border-radius:0;transition:transform .45s ease}
-#servizi01 .cs-item:hover .cs-picture img{transform:scale(1.05)}
-
 #prezzo01{padding:clamp(4rem,8vw,7.5rem) 1rem;background:linear-gradient(180deg,#102232 0%,#20384b 100%);position:relative;overflow:hidden}
-#prezzo01:before{content:"";width:100%;height:100%;background:linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(180deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:4.5rem 4.5rem;position:absolute;top:0;left:0;mask-image:linear-gradient(180deg,#000,transparent 92%)}
+#prezzo01:before{content:"";width:100%;height:100%;
+   background:linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(180deg,rgba(255,255,255,.05) 1px,transparent 1px);
+   background-size:4.5rem 4.5rem;position:absolute;top:0;left:0;mask-image:linear-gradient(180deg,#000,transparent 92%)}
 #prezzo01 .cs-content{position:relative;z-index:1}
 #prezzo01 .cs-topper{background:rgba(255,255,255,.08);color:#bde9ff;border-color:rgba(255,255,255,.16)}
 #prezzo01 .cs-title{color:#fff;max-width:21ch}
@@ -489,31 +492,23 @@ to{transform:scale(1);opacity:1}
 #prezzo01 .disclaimer p{margin:0;color:#526978}
 
 @media only screen and (min-width:48rem){
-#servizi01 .cs-item{grid-column:span 6}
 #prezzo01 .cs-ul{grid-template-columns:repeat(2,1fr)}
 }
 @media only screen and (max-width:63.9375rem){
 #page-hero .cs-title{font-size:3rem}
 }
 @media only screen and (min-width:64rem){
-#cta02 .cs-content{padding:clamp(2rem,4vw,4rem)}
-#servizi01 .cs-item{grid-column:span 4}
 #prezzo01 .cs-card{padding:clamp(2.5rem,5vw,4rem)}
 }
 @media only screen and (max-width:47.9375rem){
-#cta02 .cs-content{border-radius:1rem}
 #page-hero .cs-title{font-size:2.35rem}
-#servizi01 .cs-h3,#prezzo01 .cs-package{font-size:1.35rem}
-#servizi01 .cs-item{text-align:left;align-items:flex-start}
-#servizi01 .cs-icon{margin-bottom:.85rem}
-#servizi01 .cs-number-wrapper{margin-left:0}
+#prezzo01 .cs-package{font-size:1.35rem}
 #prezzo01 .cs-button,#prezzo01 .cs-card{border-radius:1rem}
 #prezzo01 .cs-li{text-transform:none}
 #prezzo01 .disclaimer{align-items:flex-start}
 }
 
 /* PREMIUM REFRESH - CTA, DEVELOPER, LOGOS */
-
 @media only screen and (min-width:64rem){
 #cta01 .cs-background{width:47%;right:53%;border-radius:0 1.25rem 1.25rem 0}
 }
