@@ -1,6 +1,8 @@
 /* FONT FAMILY ********************************/
 @font-face{font-family:'Vaulto-ExtraBold';src:url(../fonts/Vaulto-ExtraBold.woff2) format("woff2"),url(../fonts/Vaulto-ExtraBold.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
 .font-vaulto{font-family:'Vaulto-ExtraBold';font-weight:400;font-style:normal}
+@font-face {font-family: 'Passions Conflict';src: url(../fonts/PassionsConflict-Regular.woff2) format('woff2'),url(../fonts/PassionsConflict-Regular.woff) format('woff');font-weight: normal;font-style: normal;font-display: swap;}
+.font-passions{font-family: 'Passions Conflict';font-weight: normal;font-style: normal;}
 
 /* GENERALI ***************************/
 *,:before,:after{box-sizing:border-box}
@@ -22,17 +24,16 @@ body{margin:0;padding:0}
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #F7F8F0;
-    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    --topperFontSize: clamp(3rem, 5.6vw, 4rem);
     --headerFontSize: clamp(1.5375rem, 7.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem clamp(2.5rem, 6.82vw, 6.25rem);
 }
 
 /* TITOLI ****************************/
 p{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;letter-spacing:1px}
-.cs-topper{font-size:var(--topperFontSize);font-family:sans-serif;line-height:1.2em;text-transform:uppercase;letter-spacing:.1em;font-weight:900;
-    color:var(--third);margin-bottom:.95rem;display:block;padding:.45rem .85rem;border:1px solid rgba(67,176,239,.18);
-   border-radius:999px;background:rgba(255,255,255,.72);box-shadow:0 10px 30px rgba(53,88,114,.08);width:fit-content}
+.cs-topper{font-size:var(--topperFontSize);font-family:'Passions Conflict', sans-serif;text-transform:lowercase;color:var(--third);
+    margin-bottom:.95rem;width:fit-content}
 .cs-title{font-family:'Vaulto-ExtraBold';font-size:var(--headerFontSize);font-weight:900;line-height:1.2em;max-width:43.75rem;margin:0 0 1rem;
     color:var(--headerColor)}
 .cs-text{font-size:var(--bodyFontSize);line-height:1.5em;max-width:40.625rem;color:var(--bodyTextColor)}
