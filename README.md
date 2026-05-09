@@ -1,10 +1,9 @@
-GRAFICA: 
-- pulita e spaziosa, bg chiaro.
-- decorazioni colorate e pulite, nette e senza sbavature.
-
--> deve avere una grafica di tipo PREMIUM.
-
 
 
 DA FARE:
 
+aggiungere una sezione FAQ con domande tipo:
+
+“Come trovare più pazienti per uno studio dentistico?”
+“Quanto conta la SEO per un dentista?”
+“Perché avere un sito web veloce aiuta Google?”
