@@ -6,10 +6,12 @@
       <!-- SEO -->
       <title>Migliora la Visibilità del tuo Studio Dentistico | DentistaStudioWeb</title>
       <meta name="description" content="Creiamo siti web professionali e ottimizzati SEO per studi dentistici. Aiutiamo i dentisti a comparire su Google, aumentare la visibilità locale e ottenere più appuntamenti da nuovi pazienti." />
-      <meta name="robots" content="index, follow">
+      <!-- <meta name="robots" content="index, follow"> -->
+       <!-- da rimuovere per essere indicizzato -->
+		<meta name="robots" content="noindex, nofollow">
       <!-- style -->
-      <link rel="stylesheet" href="css/style.css" type="text/css">
-      <link rel="stylesheet" href="css/globals.css" type="text/css">
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <link rel="stylesheet" href="globals.css" type="text/css">
       <!-- favicon -->
       <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
       <!-- opengraph -->
@@ -19,48 +21,33 @@
       <meta property="og:image" content="https://dentistastudioweb.com/images/hero-5.png" />
       <meta property="og:type" content="website" />
       <!-- UMAMI - Analytics -->
-      <script defer src="https://cloud.umami.is/script.js" data-website-id="5a9776ed-ff7e-4266-97f5-65e7de1c3e1a"></script>
    </head>
    <body>
 
-      <div id="contactModal" class="modal">
-         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2 class="modal-title">Contattaci</h2>
-            <div class="contact-item">
-               <p>Per una risposta veloce</p>
-               <a href="https://wa.me/3913481506" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                     <path d="M12 2C6.48 2 2 6.48 2 12c0 1.77.46 3.43 1.26 4.88L2 22l5.25-1.23A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.61 0-3.12-.43-4.42-1.18l-.32-.18-3.12.73.74-3.04-.2-.31A7.96 7.96 0 0 1 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8-3.59 8-8 8zm4.39-5.46c-.24-.12-1.42-.7-1.64-.78-.22-.08-.38-.12-.54.12s-.62.78-.76.94c-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.2-.72-.64-1.21-1.43-1.35-1.67-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.47-.4-.41-.54-.42h-.46c-.16 0-.42.06-.64.3s-.84.82-.84 2c0 1.17.86 2.31.98 2.47.12.16 1.7 2.6 4.12 3.64.58.25 1.03.39 1.38.5.58.18 1.1.16 1.52.1.46-.07 1.42-.58 1.62-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/>
-                  </svg>
-                  WhatsApp
-               </a>
-            </div>
-            <div class="contact-item">
-               <p>Chiama quando vuoi</p>
-               <a href="tel:+3913481506">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                     <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V21c0 .55-.45 1-1 1C10.07 22 2 13.93 2 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.24.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                  </svg>
-                  +39 391 348 1506
-               </a>
-            </div>
-            <div class="contact-item">
-               <p>Invia una Email</p>
-               <a href="mailto:alex.beery08@gmail.com">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
-                     <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 3.2-8 5-8-5V6l8 5 8-5v1.2z"/>
-                  </svg>
-                  alex.beery08@gmail.com
-               </a>
+      <header id="cs-navigation">
+         <div class="cs-top-bar">
+            <div class="cs-top-container">
+                  <a href="" class="cs-logo cs-top-logo" aria-label="back to home">
+                     <!--White Logo-->
+                     <img class="cs-light" src="https://csimages.lon1.digitaloceanspaces.com/logo/altocode/002.png" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+                     <!--Dark Logo-->
+                     <img class="cs-dark" src="https://csimages.lon1.digitaloceanspaces.com/logo/altocode/002.png" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+                  </a>
+                  <div class="cs-top-contact">
+                     <a href="tel:+39 123 456 78 90" class="cs-top-link">
+                        <img class="cs-link-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
+                        +39 123 456 78 90
+                     </a>
+                  </div>
+                  <a href="" class="cs-button-solid cs-nav-button">Richiedi Preventivo</a>
             </div>
          </div>
-      </div>
-
-      <header id="header01">
          <div class="cs-container">
-            <a href="" class="cs-logo" aria-label="torna in home">
-                  <img src="images/logo.png" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            <a href="" class="cs-logo cs-bottom-logo" aria-label="back to home">
+                  <!--White Logo-->
+                  <img class="cs-light" src="https://csimages.lon1.digitaloceanspaces.com/logo/altocode/002.png" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
+                  <!--Dark Logo-->
+                  <img class="cs-dark" src="https://csimages.lon1.digitaloceanspaces.com/logo/altocode/002.png" alt="logo" width="197" height="43" aria-hidden="true" decoding="async">
             </a>
             <nav class="cs-nav" role="navigation">
                   <button class="cs-toggle" aria-label="mobile menu toggle">
@@ -73,19 +60,19 @@
                   <div class="cs-ul-wrapper">
                      <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                         <li class="cs-li">
-                              <a href="/" class="cs-li-link cs-active">
-                                 HOME
+                              <a href="" class="cs-li-link cs-active">
+                                 Home
                               </a>
                         </li>
                         <li class="cs-li">
-                              <a href="#servizi01" class="cs-li-link">
-                                 SERVIZI
+                              <a href="" class="cs-li-link">
+                                 Prodotti
                               </a>
                         </li>
-                        <!-- <li class="cs-li cs-dropdown" tabindex="0">
+                        <li class="cs-li cs-dropdown" tabindex="0">
                               <span class="cs-li-link">
                                  Servizi
-                                 <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                                 <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down2.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
                               </span>
                               <ul class="cs-drop-ul">
                                  <li class="cs-drop-li">
@@ -95,92 +82,110 @@
                                     <a href="" class="cs-li-link cs-drop-link">SEO</a>
                                  </li>
                               </ul>
-                        </li> -->
+                        </li>
                         <li class="cs-li">
-                              <a href="#report" class="cs-li-link">
-                                 REPORT
+                              <a href="" class="cs-li-link">
+                                 Blog
                               </a>
                         </li>
                         <li class="cs-li">
-                              <a href="#prezzo01" class="cs-li-link">
-                                 ABBONAMENTO
-                              </a>
-                        </li>
-                        <li class="cs-li">
-                              <a href="#chi-sono" class="cs-li-link">
-                                 SVILUPPATORE
+                              <a href="" class="cs-li-link">
+                                 Contatti
                               </a>
                         </li>
                      </ul>
                   </div>
             </nav>
-            <div class="cs-contact-group">
-                  <a class="btn-main d-none d-lg-block" onclick="openModal()">Contatta Ora</a>
-            </div>
          </div>
       </header>
 
-      <section id="hero01">
+      <section id="hero-1957">
          <div class="cs-container">
-            <div class="cs-content reveal">
-                  <h1 class="cs-title">OTTIMIZIAMO LA <u>PRESENZA ONLINE</u> DEL TUO <span class="gradient">STUDIO DENTISTICO</span></h1>
-                  <!-- <h2 class="cs-title"><u>FATTI TROVARE SU GOOGLE</u> DAI PAZIENTI CHE CERCANO UN <span class="gradient">DENTISTA NELLA TUA ZONA</span></span></h2> -->
-                  <ul class="cs-ul">
-                     <li class="cs-li">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg" alt="icona grafica" width="16" height="16" />
-                        più appuntamenti
-                     </li>
-                     <li class="cs-li">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg" alt="icona grafica" width="16" height="16" />
-                        più facile da trovare
-                     </li>
-                     <li class="cs-li">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="https://nyc3.digitaloceanspaces.com/csimages2/Images/Icons/white-check.svg" alt="icona grafica" width="16" height="16" />
-                        sito web che converte
-                     </li>
-                  </ul>
-                  <p class="cs-text">
-                     Ci occupiamo di creare e gestire il sito web del tuo studio dentistico per 
-                     farlo <span class="primarylight">comparire tra i primi risultati</span> quando 
-                     qualcuno <span class="primarylight">cerca un dentista vicino a te</span>.
-                  </p>
-                  <a class="btn-main variante d-flex d-lg-none" href="tel:+393913481506">
-                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-                     </svg>
-                     Chiama Ora
-                  </a>
-                  <a class="btn-main d-flex d-lg-none" href="https://wa.me/3913481506">
-                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"  width="27" height="27" fill="white">
-                        <path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/>
-                     </svg>
-                     WhatsApp
-                  </a>
-                  <a class="btn-main d-none d-lg-block" onclick="openModal()">Contatta Ora</a>
-                  <a href="tel:+393913481506" class="cta-phone d-none d-lg-flex">
-                     <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="" width="24" height="24">+39 391 348 1506
-                  </a>
-                  <!-- <div class="cs-reviews">
-                     <div class="cs-reviews-flex">
-                        <img class="cs-reviews-img" decoding="async" fetchpriority="high" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile1.png" alt="icona" width="48" height="48">
-                        <img class="cs-reviews-img" decoding="async" fetchpriority="high" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile2.png" alt="icona" width="48" height="48">
-                        <img class="cs-reviews-img" decoding="async" fetchpriority="high" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile3.png" alt="icona" width="48" height="48">
-                        <img class="cs-reviews-img" decoding="async" fetchpriority="high" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/hero-profile4.png" alt="icona" width="48" height="48">
-                        <span class="cs-reviews-number">+4k</span>
-                     </div>
-                     <div class="cs-flex">
-                        <h3 class="cs-rating">+ NUOVI CLIENTI<img class="cs-rating-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/lil-star.svg" alt="stella" width="16" height="16" loading="lazy" decoding="async">5.0</h3>
-                        <p class="cs-reviews-text">+ APPUNTAMENTI</p>
-                     </div>
-                  </div> -->
-            </div>
-            <div class="cs-image-group">
-               <source media="(max-width: 600px)" srcset="images/hero-5.png">
-               <source media="(min-width: 601px)" srcset="images/hero-5.png">
-               <img class="hero-img" src="images/hero-5.png" alt="">
+            <div class="cs-content">
+                  <span class="cs-topper">benessere dentale</span>
+                  <h1 class="cs-title">Il Tuo Sorriso, La Nostra Priorità</h1>
+                  <p class="cs-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt dolore magna aliqua quis nostrud exerc.</p>
+                  <a href="" class="cs-button-solid">Prenota Appuntamento</a>
             </div>
          </div>
+         <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="images/pic-fullscreen-home.jpg">
+            <source media="(min-width: 601px)" srcset="images/pic-fullscreen-home.jpg">
+            <img decoding="async" src="images/pic-fullscreen-home.jpg" alt="dentisti" width="1920" height="746" aria-hidden="true">
+         </picture>
       </section>
+
+      <section id="services-1957">
+         <div class="cs-container">
+            <ul class="cs-card-group">
+                  <li class="cs-item">
+                     <a href="" class="cs-link">
+                        <picture class="cs-icon-wrapper">
+                              <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg" alt="icona" width="32" height="32">
+                        </picture>
+                        <div class="cs-flex">
+                              <span class="cs-topper">Cura il tuo sorriso</span>
+                              <h3 class="cs-h3">Servizi odontoiatrici completi</h3>
+                        </div>
+                     </a>
+                     <picture class="cs-item-background">
+                        <source media="(max-width: 600px)" srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/dental-care.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/dental-care.jpg">
+                        <img decoding="async" src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/dental-care.jpg" alt="paziente" width="455" height="337" aria-hidden="true">
+                     </picture>
+                  </li>
+                  <li class="cs-item">
+                     <a href="" class="cs-link">
+                        <picture class="cs-icon-wrapper">
+                              <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg" alt="icona" width="32" height="32">
+                        </picture>
+                        <div class="cs-flex">
+                              <span class="cs-topper">Skin Care</span>
+                              <h3 class="cs-h3">Sorridere con serenità</h3>
+                        </div>
+                     </a>
+                     <picture class="cs-item-background">
+                        <source media="(max-width: 600px)" srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/skin-care.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/skin-care.jpg">
+                        <img decoding="async" src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/skin-care.jpg" alt="paziente" width="455" height="337" aria-hidden="true">
+                     </picture>
+                  </li>
+                  <li class="cs-item">
+                     <a href="" class="cs-link">
+                        <picture class="cs-icon-wrapper">
+                              <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg" alt="icona" width="32" height="32">
+                        </picture>
+                        <div class="cs-flex">
+                              <span class="cs-topper">Pensate per te</span>
+                              <h3 class="cs-h3">Tutti i servizi di cui hai bisogno</h3>
+                        </div>
+                     </a>
+                     <picture class="cs-item-background">
+                        <source media="(max-width: 600px)" srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/cardio-care.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/cardio-care.jpg">
+                        <img decoding="async" src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/cardio-care.jpg" alt="paziente" width="455" height="337" aria-hidden="true">
+                     </picture>
+                  </li>
+                  <li class="cs-item">
+                     <a href="" class="cs-link">
+                        <picture class="cs-icon-wrapper">
+                              <img class="cs-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/black-up-right-arrow.svg" alt="icona" width="32" height="32">
+                        </picture>
+                        <div class="cs-flex">
+                              <span class="cs-topper">Ogni paziente è unico</span>
+                              <h3 class="cs-h3">Ascoltiamo le tue esigenze</h3>
+                        </div>
+                     </a>
+                     <picture class="cs-item-background">
+                        <source media="(max-width: 600px)" srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/eye-care.jpg">
+                        <source media="(min-width: 601px)" srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/eye-care.jpg">
+                        <img decoding="async" src="https://csimages2.nyc3.digitaloceanspaces.com/Images/People/eye-care.jpg" alt="paziente" width="455" height="337" aria-hidden="true">
+                     </picture>
+                  </li>
+            </ul>
+         </div>
+      </section>
+
 
       <section id="cta02">
          <div class="cs-container">
@@ -668,7 +673,7 @@
          </picture> -->
       </footer>
 
-      <script src="js/custom.js"></script>
+      <script src="custom.js"></script>
    </body>
 </html>
 
